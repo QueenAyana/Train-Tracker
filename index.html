@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Train Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Grand Off-Central Station</h1>
+            <h2>Railroad crossing lookout for the cars can you spell it wthout any "R"</h2>
+        </div>
+
+        <div class="row secHead">
+            <div class="col-12">
+                <h3>Trains on the Tracks</h3>
+            </div>
+        </div>
+        <div class="row content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Engine Num.</th>
+                        <th scope="col">Track Num.</th>
+                        <th scope="col"> Destination</th>
+                        <th scope="col">Departure Time</th>
+                        <th scope="col">Arival Time</th>
+                    </tr>
+                    <tbody class="employeeInfo"></tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="row" id="add">
+            <div class="col-12 secHead">
+                <h3>Add A Train</h3>
+            </div>
+            <div class="col-12 content">
+                <!--name-->
+                <h4>Engine Num.</h4>
+                <input type="number" id="name">
+                <!--role-->
+                <h4>Track Num.</h4>
+                <input type="number" id="role">
+                <!--startDate-->
+                <h4>Destination</h4>
+                <input type="text" id="startDate">
+                <!--rate-->
+                <h4>Monthly Rate</h4>
+                <input type="number" id="rate">
+                <br>
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
